@@ -1,17 +1,17 @@
 /* Class Diagram
 
-**Abstract Factory**
-    --createButton()
-    --createCheckbox()
+AbstractFactory
+│
+├─── createButton()
+└─── createCheckbox()
 
-**ConcreteFactory1 (WindowFactory)**
-    --createButton() -> WindowsButton
-    --createCheckbox() -> WindowsCheckbox
+ConcreteFactory1 (WindowsFactory)
+├─── createButton() → WindowsButton
+└─── createCheckbox() → WindowsCheckbox
 
-**ConcreteFactory2 (MacFactory)**
-    --createButton() -> MacButton
-    --createCheckbox -> MacCheckbox
-
+ConcreteFactory2 (MacFactory)
+├─── createButton() → MacButton
+└─── createCheckbox() → MacCheckbox
 
 AbstractProductA (Button)
 AbstractProductB (Checkbox)
@@ -19,8 +19,9 @@ AbstractProductB (Checkbox)
 ConcreteProductA1 (WindowsButton)
 ConcreteProductB1 (WindowsCheckbox)
 
-ConcreteProductA1 (MacButton)
+ConcreteProductA2 (MacButton)
 ConcreteProductB2 (MacCheckbox)
+
 
 
 */
